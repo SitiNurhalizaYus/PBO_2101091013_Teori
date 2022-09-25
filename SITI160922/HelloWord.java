@@ -7,7 +7,7 @@ package SITI160922;
 
 /**
  *
- * @author LIZA
+ * @author siti nurhaliza yus
  */
 public class HelloWord {
     public static void main(String[] args) {
