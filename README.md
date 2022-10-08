@@ -1,2 +1,2 @@
-# Langkah-langkah pembuatan latihan dari projecct PBO
+# Langkah-langkah pembuatan latihan dari project PBO
 - [Modul 1]()
