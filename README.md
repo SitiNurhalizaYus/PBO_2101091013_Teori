@@ -22,6 +22,7 @@ public class HelloWord {
 }
 ```
 Hasil Run/Output :
+![2](https://user-images.githubusercontent.com/114122090/197296812-818549ef-c509-42f0-8670-05f394a15425.png)
 
 ### `3.6.2 The Tree`
 Menggunakan NetBeans, membuat class dengan nama : TheTree. Hasil dari program
@@ -44,6 +45,7 @@ public class TheTree {
 }
 ```
 Hasil Run/Output :
+![3](https://user-images.githubusercontent.com/114122090/197296833-d85de8f8-ba46-46cb-ae83-bc19eb5843aa.png)
 
 Variasi lainnya 
 
@@ -61,6 +63,7 @@ public class HelloWord {
 }
 ```
 Hasil Run/Output :
+![1](https://user-images.githubusercontent.com/114122090/197296845-73ec9c0b-f946-4fca-9e29-a9fe58b19e50.png)
 
 ## Modul 2
 ## 
