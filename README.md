@@ -2,7 +2,7 @@
 - [Modul 3](README.md#modul-3) Mengenali Lingkup Pemrograman Anda
 - [Modul 4](README.md#modul-4) Dasar-Dasar Pemrograman
 - [Modul 5](README.md#modul-5) Mendapatkan Input dari Keyboard
-- [Modul 6](README.md#modul-6)
+- [Modul 6](README.md#modul-6) Stuktur Kontrol
 - [Modul 7](README.md#modul-7)
 
 ## Modul 3
@@ -268,4 +268,137 @@ Hasil Run/Output :
 *output*
 
 ![5](https://user-images.githubusercontent.com/114122090/197333056-cd40c3df-2873-4bb8-a79b-632908587922.png)
+
+## Modul 6
+#6.5 Latihan 
+### `6.5.1 Nilai` 
+Ambil tiga nilai ujian dari user dan hitung nilai rata-rata dari nilai tersebut. Berikan 
+output rata-rata dari tiga ujian. Berikan juga smiley face pada output jika nilai rata-rata 
+lebih besar atau sama dengan 60, selain itu beri output :-(. 
+1. Gunakan BufferedReader untuk mendapat input dari user, dan System.out untuk 
+output hasilnya.
+Kode Program :
+```java
+public static void main(String[] args) {
+    BufferedReader nilai = new BufferedReader(new InputStreamReader(System.in));
+    String r="";
+    String s="";
+    String t="";
+
+    try{
+     System.out.print("Masukkan nilai pertama Anda: ");
+     r = nilai.readLine();
+     
+     System.out.print("Masukkan nilai kedua Anda: ");
+     s = nilai.readLine();
+
+     System.out.print("Masukkan nilai ketiga Anda: ");
+     t = nilai.readLine();
+    }catch(IOException e){
+       System.out.println("Kata yang Anda masukkan salah, silahkan coba lagi.");
+    }
+    
+    int pertama;
+    int kedua;
+    int ketiga;
+    
+    pertama = Integer.parseInt(r);
+    kedua = Integer.parseInt(s);
+    ketiga = Integer.parseInt(t);
+
+    int rata_rata=(pertama+kedua+ketiga)/3;
+
+    System.out.println("Rata-rata nilai Anda: "+rata_rata);
+        if (rata_rata<=60){
+            System.out.println(":)");
+        }
+        else {
+            System.out.println(":(");
+        }
+   }
+```  
+Hasil Run/Output :
+
+![1](https://user-images.githubusercontent.com/114122090/197333529-b21be5f2-c599-4724-9c7e-c7033184c286.png)
+
+2. Gunakan JOptionPane untuk mendapat input dari user dan output hasilnya.
+Kode Program :
+```java
+public static void main(String[] args) {
+    BufferedReader dataIn = new BufferedReader(new InputStreamReader( System.in) ); 
+    int angka=0; 
+    int angka2=0; 
+    int jumlah=0; 
+
+    try{ 
+    System.out.print("Masukan angka pertama : ");
+    angka = Integer.parseInt(dataIn.readLine()); 
+
+    System.out.print("Masukan angka kedua : ");
+    angka2 = Integer.parseInt(dataIn.readLine());
+
+    jumlah = angka + angka2;
+    }
+    catch( IOException e ){ 
+    System.out.println("Error!"); 
+    } 
+
+    System.out.println(angka+" + "+angka2+" = "+jumlah);
+} 
+```
+
+Hasil Run/Output :
+
+![2](https://user-images.githubusercontent.com/114122090/197333561-e78d9420-2ed5-46ec-a53d-3a4e4e89a281.png)
+
+### `6.5.2Membaca Bilangan`
+Ambil sebuah angka sebagai input dari user, dan outputnya berupa kata yang sesuai 
+dengan angka. Angka yang dimasukkan antara 1-10. Jika user memasukkan nilai yang 
+tidak sesuai berikan output “Invalid number”. 
+1. Gunakan statement if-else untuk menyelesaikan 
+Kode Program :
+```java
+public static void main( String[] args ){ 
+    String name = ""; 
+    name = JOptionPane.showInputDialog("Please enter your name"); 
+
+    String msg = "Hello " + name + "!"; 
+
+    JOptionPane.showMessageDialog(null, msg); 
+
+}
+```
+
+Hasil Run/Output :
+
+![3](https://user-images.githubusercontent.com/114122090/197333711-7c6d084e-f213-4e2f-a708-c405c3f3cd80.png)
+
+![4](https://user-images.githubusercontent.com/114122090/197333713-c3911125-b10f-4628-93bd-1fd09101af3b.png)
+
+
+3. Gunakan statement switch untuk menyelesaikan 
+Kode Program :
+```java
+public static void main( String[] args ){  
+    int angka=0;
+    int angka2=0; 
+    int jumlah=0;
+
+    angka = Integer.parseInt(JOptionPane.showInputDialog("Masukan angka pertama")); 
+    angka2 = Integer.parseInt(JOptionPane.showInputDialog("Masukan angka kedua"));
+    jumlah = angka2+angka; 
+
+    String msg = angka+" + "+angka2+" = "+jumlah; 
+
+    JOptionPane.showMessageDialog(null, msg); 
+}
+```
+Hasil Run/Output :
+
+![5](https://user-images.githubusercontent.com/114122090/197333784-0caa8073-80c4-4e5b-89da-0d2d63665f90.png)
+
+![6](https://user-images.githubusercontent.com/114122090/197333791-ec6be134-f7ea-4a57-bccb-b16e477a0fa0.png)
+
+![7](https://user-images.githubusercontent.com/114122090/197333800-b3828fe6-fd9c-4596-bad1-5bed07ced876.png)
+
 
