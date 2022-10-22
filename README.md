@@ -220,7 +220,6 @@ public static void main(String[] args) {
             word2 = dataIn.readLine();
             System.out.print("Enter word3 : ");
             word3 = dataIn.readLine();
-            
         }
         catch( IOException e ){
             System.out.println("Error !");
@@ -229,8 +228,12 @@ public static void main(String[] args) {
     }
 ```
 Hasil Run/Output :
+
 Masukan karakter dengan klik terlebih dahulu untuk menginputkan karakter
+
 ![1](https://user-images.githubusercontent.com/114122090/197332775-5a52d639-daff-47ab-8253-b6a246c8fb55.png)
+
+Output
 
 ![2](https://user-images.githubusercontent.com/114122090/197332780-ac8359b8-609c-4547-9e24-e224f982101a.png)
 
@@ -255,10 +258,10 @@ Kode Program :
 Hasil Run/Output :
 
 ![3](https://user-images.githubusercontent.com/114122090/197332988-381e6eaf-7b02-471e-b2da-98728a545328.png)
-###### inputan pertama
+*inputan pertama*
 
 ![4](https://user-images.githubusercontent.com/114122090/197333049-d7eb5386-6799-483a-9339-c204e0e9ab04.png)
-###### inputan kedua
+*inputan kedua*
 
 ![5](https://user-images.githubusercontent.com/114122090/197333056-cd40c3df-2873-4bb8-a79b-632908587922.png)
-###### output
+*output*
