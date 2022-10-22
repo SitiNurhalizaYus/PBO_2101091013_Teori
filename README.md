@@ -88,7 +88,7 @@ letter = a
 result = true 
 str = hello 
 
-Program :
+Kode Program :
 ```java
 public static void main(String[] args) {
         int i = 10;
@@ -99,13 +99,12 @@ public static void main(String[] args) {
         System.out.println("Number = " + i);
         System.out.println("letter = " + j);
         System.out.println("result = " + k);
-        System.out.println("str = " + l);
-        
-      
+        System.out.println("str = " + l);    
     }
 ```
 
 Hasil Run/Output :
+
 ![1](https://user-images.githubusercontent.com/114122090/197332249-4ee469e9-4f19-4b30-b1e3-e5a7450cbe12.png)
 
 ### `4.11.2. Mendapatkan nilai rata-rata dari tiga angka `
@@ -116,7 +115,7 @@ number 2 = 20
 number 3 = 45 
 Average is = 25 
 
-Program :
+Kode Program :
 ```java
 public static void main(String[] args) {
        int i = 10;
@@ -126,13 +125,13 @@ public static void main(String[] args) {
        System.out.println("number 1 = " + i);
        System.out.println("number 1 = " + j);
        System.out.println("number 1 = " + k);
-       
-       
+      
        System.out.println("Average is = " + (i + j + k)/3);       
     }
 ```
 
 Hasil Run/Output :
+
 ![2](https://user-images.githubusercontent.com/114122090/197332179-8c9c375c-9952-4518-b5ea-86305fdd7d79.png)
 
 ### `4.11.3. Menampilkan nilai terbesar`
@@ -146,7 +145,7 @@ number 2 = 23
 number 3 = 5 
 
 Nilai tertingginya adalah angka = 23 
-Program :
+Kode Program :
 ```java
 public static void main(String[] args) {
        int i = 10;
@@ -166,6 +165,7 @@ public static void main(String[] args) {
 ```
 
 Hasil Run/Output :
+
 ![3](https://user-images.githubusercontent.com/114122090/197332117-90999fc3-6863-4b9b-be64-a3d751a61fe5.png)
 
 ### `4.11.4. Operator precedence`
@@ -175,7 +175,7 @@ kurung pada urutan sesuai dengan bagaimana pernyataan tersebut akan dievaluasi.
 2. 3 * 10 *2 / 15 – 2 + 4 ^ 2 ^ 2 
 3. r ^ s * t / u – v + w ^ x – y++ 
 
-Program :
+Kode Program :
 ```java
 public static void main(String[] args) {
         int a=1,b=1,c=1,d=1,e=1,f=1,g=1,h=1,i=1,r=1,s=1,t=1,u=1,v=1,w=1,x=1,y=1;
@@ -187,13 +187,13 @@ public static void main(String[] args) {
         n2 = (((3*10)*2)/15)-2+((4^2)^2);
         n3 = (((r^s)*t)/u)-v+(w^x)-(y++);
         
-        
         System.out.println("1."+n1);
         System.out.println("2."+n2);
         System.out.println("3."+n3);
     }
 ```
 Hasil Run/Output :
+
 ![4](https://user-images.githubusercontent.com/114122090/197332035-141a61e3-6747-4fd3-8b2f-cbdd670544e6.png)
 
 ## Modul 5
