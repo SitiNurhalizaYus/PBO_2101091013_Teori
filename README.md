@@ -1,7 +1,7 @@
 # Langkah-langkah pembuatan latihan dari project PBO
 - [Modul 3](README.md#modul-3) Mengenali Lingkup Pemrograman Anda
 - [Modul 4](README.md#modul-4) Dasar-Dasar Pemrograman
-- [Modul 5](README.md#modul-5)
+- [Modul 5](README.md#modul-5) Mendapatkan Input dari Keyboard
 - [Modul 6](README.md#modul-6)
 - [Modul 7](README.md#modul-7)
 
@@ -197,5 +197,68 @@ Hasil Run/Output :
 ![4](https://user-images.githubusercontent.com/114122090/197332035-141a61e3-6747-4fd3-8b2f-cbdd670544e6.png)
 
 ## Modul 5
-# 4.11 Latihan
-### ``
+# 5.1 Latihan 
+### `5.1.1 Kata Terakhir (versi BufferedReader)`
+Menggunakan BufferedReader, tanyakan tiga kata dari user dan tampilkan output dari 
+input user tersebut ke layar. Contoh, 
+Enter word1:Goodbye 
+Enter word2:and 
+Enter word3:Hello 
+Goodbye and Hello 
+Kode Program :
+```java
+public static void main(String[] args) {
+        BufferedReader dataIn = new BufferedReader(new InputStreamReader( System.in));
+        String word = "";
+        String word2 = "";
+        String word3 = "";
+        
+        try{
+            System.out.print("Enter word1 : ");
+            word = dataIn.readLine();
+            System.out.print("Enter word2 : ");
+            word2 = dataIn.readLine();
+            System.out.print("Enter word3 : ");
+            word3 = dataIn.readLine();
+            
+        }
+        catch( IOException e ){
+            System.out.println("Error !");
+        }
+        System.out.println(word+" "+word2+" "+word3);
+    }
+```
+Hasil Run/Output :
+Masukan karakter dengan klik terlebih dahulu untuk menginputkan karakter
+![1](https://user-images.githubusercontent.com/114122090/197332775-5a52d639-daff-47ab-8253-b6a246c8fb55.png)
+
+![2](https://user-images.githubusercontent.com/114122090/197332780-ac8359b8-609c-4547-9e24-e224f982101a.png)
+
+### `5.1.2 Kata Terakhir (versi JOptionPane)` 
+Menggunakan JOptionPane, tanyakan tiga kata dari user dan tampilkan output dari input 
+user tersebut ke layar. 
+Kode Program :
+```java
+ public static void main(String[] args) {
+        String word = "";
+        String word2 = "";
+        
+        word = JOptionPane.showInputDialog("Masukan kata pertama");
+        word2 = JOptionPane.showInputDialog("Masukan kata kedua");
+        
+        String msg = word +" and "+word2;
+        
+        JOptionPane.showMessageDialog(null, msg);
+    }
+```
+
+Hasil Run/Output :
+
+![3](https://user-images.githubusercontent.com/114122090/197332988-381e6eaf-7b02-471e-b2da-98728a545328.png)
+###### inputan pertama
+
+![4](https://user-images.githubusercontent.com/114122090/197333049-d7eb5386-6799-483a-9339-c204e0e9ab04.png)
+###### inputan kedua
+
+![5](https://user-images.githubusercontent.com/114122090/197333056-cd40c3df-2873-4bb8-a79b-632908587922.png)
+###### output
