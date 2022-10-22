@@ -229,11 +229,11 @@ public static void main(String[] args) {
 ```
 Hasil Run/Output :
 
-*Masukan karakter dengan klik terlebih dahulu untuk menginputkan karakter
+*Masukan karakter dengan klik terlebih dahulu untuk menginputkan karakter*
 
 ![1](https://user-images.githubusercontent.com/114122090/197332775-5a52d639-daff-47ab-8253-b6a246c8fb55.png)
 
-*Output
+*Output*
 
 ![2](https://user-images.githubusercontent.com/114122090/197332780-ac8359b8-609c-4547-9e24-e224f982101a.png)
 
