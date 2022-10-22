@@ -401,4 +401,9 @@ Hasil Run/Output :
 
 ![7](https://user-images.githubusercontent.com/114122090/197333800-b3828fe6-fd9c-4596-bad1-5bed07ced876.png)
 
-
+### `6.5.3 Cetak Seratus Kali`
+Buat sebuah program yang mencetak nama Anda selama seratus kali. Buat tiga versi 
+program ini menggunakan while loop, do while dan for-loop. 
+### `6.5.4 Perpangkatan`
+Hitung pangkat sebuah nilai berdasarkan angka dan nilai pangkatnya. Buat tiga versi 
+dari program ini menggunakan while loop, do-while dan for-loop. 
