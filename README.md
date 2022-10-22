@@ -88,6 +88,26 @@ letter = a
 result = true 
 str = hello 
 
+Program :
+```java
+public static void main(String[] args) {
+        int i = 10;
+        char j = 'a';
+        boolean k = true;
+        String l = "hello";
+        
+        System.out.println("Number = " + i);
+        System.out.println("letter = " + j);
+        System.out.println("result = " + k);
+        System.out.println("str = " + l);
+        
+      
+    }
+```
+
+Hasil Run/Output :
+![1](https://user-images.githubusercontent.com/114122090/197332249-4ee469e9-4f19-4b30-b1e3-e5a7450cbe12.png)
+
 ### `4.11.2. Mendapatkan nilai rata-rata dari tiga angka `
 Buatlah program yang menghasilkan output nilai rata-ratadari tiga angka. Nilai dari masingmasing tiga angka tersebut adalah 10, 20 dan 45. Tampilan Output yang diharapkan 
 adalah, 
@@ -96,7 +116,26 @@ number 2 = 20
 number 3 = 45 
 Average is = 25 
 
-###`4.11.3. Menampilkan nilai terbesar `
+Program :
+```java
+public static void main(String[] args) {
+       int i = 10;
+       int j = 20;
+       int k = 45; 
+       
+       System.out.println("number 1 = " + i);
+       System.out.println("number 1 = " + j);
+       System.out.println("number 1 = " + k);
+       
+       
+       System.out.println("Average is = " + (i + j + k)/3);       
+    }
+```
+
+Hasil Run/Output :
+![2](https://user-images.githubusercontent.com/114122090/197332179-8c9c375c-9952-4518-b5ea-86305fdd7d79.png)
+
+### `4.11.3. Menampilkan nilai terbesar`
 Diberikan tiga angka, tuliskan program yang menghasilkan output angka dengan nilai 
 terbesar diantara tiga angka tersebut. Gunakan operator kondisi ?: yang telah kita pelajari 
 sebelumnya (HINT: Anda akan perlu menggunakan dua set operator ?: untuk 
@@ -107,13 +146,55 @@ number 2 = 23
 number 3 = 5 
 
 Nilai tertingginya adalah angka = 23 
-4.11.4. Operator precedence 
+Program :
+```java
+public static void main(String[] args) {
+       int i = 10;
+       int j = 23;
+       int k = 5;
+       int hasil;
+       
+       System.out.println("number 1 = " + i);
+       System.out.println("number 2 = " + j);
+       System.out.println("number 3 = " + k);
+       
+       hasil = (i>=j)?i:j;
+       hasil = (k>=hasil)?i:hasil;      
+       
+       System.out.println("Nilai tertingginya adalah = "+hasil);
+    }
+```
+
+Hasil Run/Output :
+![3](https://user-images.githubusercontent.com/114122090/197332117-90999fc3-6863-4b9b-be64-a3d751a61fe5.png)
+
+### `4.11.4. Operator precedence`
 Diberikan pernyataan berikut ini, tulis kembali soal tersebut dengan menambahkan tanda 
 kurung pada urutan sesuai dengan bagaimana pernyataan tersebut akan dievaluasi. 
 1. a / b ^ c ^ d – e + f – g * h + i 
 2. 3 * 10 *2 / 15 – 2 + 4 ^ 2 ^ 2 
 3. r ^ s * t / u – v + w ^ x – y++ 
 
+Program :
+```java
+public static void main(String[] args) {
+        int a=1,b=1,c=1,d=1,e=1,f=1,g=1,h=1,i=1,r=1,s=1,t=1,u=1,v=1,w=1,x=1,y=1;
+        int n1;
+        int n2;
+        int n3;
+       
+        n1 = (((a/b)^c)^d)-e+f-(g*h)+i;
+        n2 = (((3*10)*2)/15)-2+((4^2)^2);
+        n3 = (((r^s)*t)/u)-v+(w^x)-(y++);
+        
+        
+        System.out.println("1."+n1);
+        System.out.println("2."+n2);
+        System.out.println("3."+n3);
+    }
+```
+Hasil Run/Output :
+![4](https://user-images.githubusercontent.com/114122090/197332035-141a61e3-6747-4fd3-8b2f-cbdd670544e6.png)
 
 ## Modul 5
 # 4.11 Latihan
