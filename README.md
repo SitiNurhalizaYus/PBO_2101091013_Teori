@@ -351,7 +351,7 @@ Hasil Run/Output :
 
 ![2](https://user-images.githubusercontent.com/114122090/197333561-e78d9420-2ed5-46ec-a53d-3a4e4e89a281.png)
 
-### `6.5.2Membaca Bilangan`
+### `6.5.2 Membaca Bilangan`
 Ambil sebuah angka sebagai input dari user, dan outputnya berupa kata yang sesuai 
 dengan angka. Angka yang dimasukkan antara 1-10. Jika user memasukkan nilai yang 
 tidak sesuai berikan output “Invalid number”. 
