@@ -274,7 +274,7 @@ Hasil Run/Output :
 ![5](https://user-images.githubusercontent.com/114122090/197333056-cd40c3df-2873-4bb8-a79b-632908587922.png)
 
 ## Modul 6
-#6.5 Latihan 
+# 6.5 Latihan 
 ### `6.5.1 Nilai` 
 Ambil tiga nilai ujian dari user dan hitung nilai rata-rata dari nilai tersebut. Berikan 
 output rata-rata dari tiga ujian. Berikan juga smiley face pada output jika nilai rata-rata 
@@ -453,14 +453,14 @@ Hasil Run/Output :
 
 *jika angka yang diinput valid*
 
-![2](https://user-images.githubusercontent.com/114122090/197370066-8d58775a-6b54-4504-bde6-27cb6ebced59.png)
+![2d](https://user-images.githubusercontent.com/114122090/197370328-b095ba85-64bc-4ad9-944f-2c6a8f6bb75b.png)
 
 ![2a](https://user-images.githubusercontent.com/114122090/197370068-2f42196e-a8c8-4671-b865-9c860de405af.png)
 
 
 *jika angka yang diinput tidak valid*
 
-![2b](https://user-images.githubusercontent.com/114122090/197370069-362effb3-efac-4044-9dce-531881a388b1.png)
+![2e](https://user-images.githubusercontent.com/114122090/197370326-ab37f106-3055-4501-897d-f2dea61f9cbf.png)
 
 ![2c](https://user-images.githubusercontent.com/114122090/197370072-3f0c6657-a022-4f29-825f-31c445a040d7.png)
 
@@ -469,18 +469,130 @@ Hasil Run/Output :
 Buat sebuah program yang mencetak nama Anda selama seratus kali. Buat tiga versi 
 program ini menggunakan while loop, do while dan for-loop. 
 
-**Versi.1**
+Kode Program :
 
-**Versi.2**
+**Versi.1 (While)**
+```java
+public static void main(String args[]){
+    int r=0;
+    while (r<100){
+        System.out.println("SITI");
+        r++;
+    }
+  }
+```
 
-**Versi.3**
+**Versi.2 (Do While)**
+```java
+public static void main(String args[]){
+    int r = 0;
+    do {
+        System.out.println("SITI");
+        r++;
+    } while (r<100);
+  }
+```
+
+**Versi.3  (For)**
+```java
+public static void main(String args[]){
+    int r;
+    for (r=0; r<100; r++){
+        System.out.println("SITI"); 
+    }
+  }
+```
+
+Hasil Run/Output :
+
+![8](https://user-images.githubusercontent.com/114122090/197370519-0ffdb2a0-b8e9-44e3-8e05-53ca5eb86f2b.png)
 
 ### `6.5.4 Perpangkatan`
 Hitung pangkat sebuah nilai berdasarkan angka dan nilai pangkatnya. Buat tiga versi 
 dari program ini menggunakan while loop, do-while dan for-loop. 
 
-**Versi.1**
+Kode Program :
+**Versi.1 (While)**
+```java
+public static void main (String[]args){
+    int i =1;
+    int hasil =1;
+    String str1="";
+    String str2="";
+    
+    str1=JOptionPane.showInputDialog("Masukkan angka");
+    int angka=Integer.valueOf(str1).intValue();
+    
+    str2=JOptionPane.showInputDialog("Masukkan pangkat");
+    int pangkat=Integer.valueOf(str2).intValue();
+    
+        while(i<=pangkat){
+            hasil=hasil*angka;
+            i++;
+        }
+        
+    String str3=angka+" pangkat "+pangkat+ " = "+hasil;
+    JOptionPane.showMessageDialog(null, str3 );
+    }
+```
 
-**Versi.2**
+**Versi.2 (Do While)**
+```java
+public static void main (String[]args){
+    int i =1;
+    int hasil =1;
+    String str1="";
+    String str2="";
+    
+    str1=JOptionPane.showInputDialog("Masukkan angka");
+    int angka=Integer.valueOf(str1).intValue();
+    
+    str2=JOptionPane.showInputDialog("Masukkan pangkat");
+    int pangkat=Integer.valueOf(str2).intValue();
+    
+        do{
+            hasil=hasil*angka;
+            i++;
+        }
+        while(i<=pangkat);
+        
+    String str3=angka+" pangkat "+pangkat+ " = "+hasil;
+    JOptionPane.showMessageDialog(null, str3 );
+    }
+```
 
-**Versi.3**
+**Versi.3  (For)**
+```java
+public static void main (String[]args){
+    int hasil =1;
+    String str1="";
+    String str2="";
+    
+    str1=JOptionPane.showInputDialog("Masukkan angka");
+    int angka=Integer.valueOf(str1).intValue();
+    
+    str2=JOptionPane.showInputDialog("Masukkan pangkat");
+    int pangkat=Integer.valueOf(str2).intValue();
+    
+        for(int i=1;i<=pangkat;i++){
+            hasil=hasil*angka;
+        }
+        
+    String str3=angka+" pangkat "+pangkat+ " = "+hasil;
+    JOptionPane.showMessageDialog(null, str3 );
+    }
+```
+Hasil Run/Output :
+
+*masukan input ke 1*
+
+![9](https://user-images.githubusercontent.com/114122090/197370620-ebbf964b-afea-4003-9afd-b85f5dbc5bd5.png)
+
+*masukan input ke 2*
+
+![9a](https://user-images.githubusercontent.com/114122090/197370623-7bc8235c-01fb-45be-878b-b0f65bf68b65.png)
+
+*output*
+
+![9b](https://user-images.githubusercontent.com/114122090/197370624-0a7d772a-6b60-4ab5-85a5-cefcc91c4f5a.png)
+
