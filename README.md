@@ -22,6 +22,8 @@ public class HelloWord {
     }
 }
 ```
+file : [soal1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI160922/heloworld.java)
+
 Hasil Run/Output :
 
 ![2](https://user-images.githubusercontent.com/114122090/197296812-818549ef-c509-42f0-8670-05f394a15425.png)
@@ -47,11 +49,15 @@ public class TheTree {
     }
 }
 ```
+file : [soal2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI160922/TheTree.java)
+
 Hasil Run/Output :
 
 ![3](https://user-images.githubusercontent.com/114122090/197296833-d85de8f8-ba46-46cb-ae83-bc19eb5843aa.png)
 
 Variasi lainnya 
+
+file : [soal](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI160922/HelloWord.java)
 
 Kode Program :
 ```java
@@ -104,6 +110,7 @@ public static void main(String[] args) {
         System.out.println("str = " + l);    
     }
 ```
+file : [soal1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Praktek/blob/105b53866d65bfa82295b4737b0b4f473972b0cf/src/SITI230922/latihan10.java)
 
 Hasil Run/Output :
 
@@ -131,6 +138,7 @@ public static void main(String[] args) {
        System.out.println("Average is = " + (i + j + k)/3);       
     }
 ```
+file : [soal2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Praktek/blob/105b53866d65bfa82295b4737b0b4f473972b0cf/src/SITI230922/latihan11.java)
 
 Hasil Run/Output :
 
@@ -166,6 +174,7 @@ public static void main(String[] args) {
        System.out.println("Nilai tertingginya adalah = "+hasil);
     }
 ```
+file : [soal3](https://github.com/SitiNurhalizaYus/PBO_2101091013_Praktek/blob/105b53866d65bfa82295b4737b0b4f473972b0cf/src/SITI230922/latihan12.java)
 
 Hasil Run/Output :
 
@@ -195,6 +204,8 @@ public static void main(String[] args) {
         System.out.println("3."+n3);
     }
 ```
+file : [soal4](https://github.com/SitiNurhalizaYus/PBO_2101091013_Praktek/blob/105b53866d65bfa82295b4737b0b4f473972b0cf/src/SITI230922/latihan13.java)
+
 Hasil Run/Output :
 
 ![4](https://user-images.githubusercontent.com/114122090/197332035-141a61e3-6747-4fd3-8b2f-cbdd670544e6.png)
@@ -231,6 +242,7 @@ public static void main(String[] args) {
         System.out.println(word+" "+word2+" "+word3);
     }
 ```
+file : [soal1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI300922/Latihan5.java)
 Hasil Run/Output :
 
 *Masukan karakter dengan klik terlebih dahulu untuk menginputkan karakter*
@@ -258,6 +270,7 @@ Kode Program :
         JOptionPane.showMessageDialog(null, msg);
     }
 ```
+file : [soal2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI300922/Latihan6.java)
 
 Hasil Run/Output :
 
@@ -322,6 +335,8 @@ public static void main(String[] args) {
         }
    }
 ```  
+file : [soal1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI071022/latihan1.java)
+
 Hasil Run/Output :
 
 ![1](https://user-images.githubusercontent.com/114122090/197333529-b21be5f2-c599-4724-9c7e-c7033184c286.png)
@@ -362,6 +377,7 @@ public static void main(String[] args) {
     JOptionPane.showMessageDialog(null, hasil);
     }
 ```
+file : [soal2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI071022/latihan2.java)
 
 Hasil Run/Output :
 
@@ -406,6 +422,7 @@ public static void main(String[]args){
     }
 }
 ```
+file : [soal1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI071022/latihan3.java)
 
 Hasil Run/Output :
 
@@ -423,7 +440,7 @@ Hasil Run/Output :
 ![2c](https://user-images.githubusercontent.com/114122090/197370072-3f0c6657-a022-4f29-825f-31c445a040d7.png)
 
 
-3. Gunakan statement switch untuk menyelesaikan 
+2. Gunakan statement switch untuk menyelesaikan 
 
 Kode Program :
 ```java
@@ -449,6 +466,8 @@ public static void main(String[]args){
     JOptionPane.showMessageDialog(null, hasil);
   }
 ```
+file : [soal2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI071022/latihan4.java)
+
 Hasil Run/Output :
 
 *jika angka yang diinput valid*
@@ -481,6 +500,7 @@ public static void main(String args[]){
     }
   }
 ```
+file : [v1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI211022/latihan1.java)
 
 **Versi.2 (Do While)**
 ```java
@@ -492,6 +512,7 @@ public static void main(String args[]){
     } while (r<100);
   }
 ```
+file : [v2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI211022/latihan2.java)
 
 **Versi.3  (For)**
 ```java
@@ -502,6 +523,7 @@ public static void main(String args[]){
     }
   }
 ```
+file : [v3](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI211022/latihan3.java)
 
 Hasil Run/Output :
 
@@ -535,6 +557,7 @@ public static void main (String[]args){
     JOptionPane.showMessageDialog(null, str3 );
     }
 ```
+file : [v1](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI211022/latihan4.java)
 
 **Versi.2 (Do While)**
 ```java
@@ -560,6 +583,7 @@ public static void main (String[]args){
     JOptionPane.showMessageDialog(null, str3 );
     }
 ```
+file : [v2](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI211022/latihan5.java)
 
 **Versi.3  (For)**
 ```java
@@ -582,6 +606,8 @@ public static void main (String[]args){
     JOptionPane.showMessageDialog(null, str3 );
     }
 ```
+file : [v3](https://github.com/SitiNurhalizaYus/PBO_2101091013_Teori/blob/139610d364cf67e0fe5fc5eb5322cad9b6e4daa3/SITI211022/latihan6.java)
+
 Hasil Run/Output :
 
 *masukan input ke 1*
