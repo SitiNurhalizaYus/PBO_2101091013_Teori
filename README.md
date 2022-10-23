@@ -10,9 +10,10 @@
 ### `3.6.1 Hello World!`
 Menggunakan NetBeans, membuat class dengan nama : [NamaAnda]. Hasil dari
 program yang harus tampil dilayar :
-```
+
 Welcome to Java Programming [NamaAnda]!!!
-```
+
+
 Kode Program :
 ```java
 public class HelloWord {
@@ -28,12 +29,13 @@ Hasil Run/Output :
 ### `3.6.2 The Tree`
 Menggunakan NetBeans, membuat class dengan nama : TheTree. Hasil dari program
 yang harus tampil dilayar :
-```
+
 I think that I shall never see,
 a poem as lovely as a tree. 
 A tree whose hungry mouth is pressed 
 Against the Earth’s sweet flowing breast.
-```
+
+
 Kode Program :
 ```java
 public class TheTree {
@@ -145,6 +147,7 @@ number 2 = 23
 number 3 = 5 
 
 Nilai tertingginya adalah angka = 23 
+
 Kode Program :
 ```java
 public static void main(String[] args) {
@@ -205,6 +208,7 @@ Enter word1:Goodbye
 Enter word2:and 
 Enter word3:Hello 
 Goodbye and Hello 
+
 Kode Program :
 ```java
 public static void main(String[] args) {
@@ -277,6 +281,7 @@ output rata-rata dari tiga ujian. Berikan juga smiley face pada output jika nila
 lebih besar atau sama dengan 60, selain itu beri output :-(. 
 1. Gunakan BufferedReader untuk mendapat input dari user, dan System.out untuk 
 output hasilnya.
+
 Kode Program :
 ```java
 public static void main(String[] args) {
@@ -309,7 +314,7 @@ public static void main(String[] args) {
     int rata_rata=(pertama+kedua+ketiga)/3;
 
     System.out.println("Rata-rata nilai Anda: "+rata_rata);
-        if (rata_rata<=60){
+        if (rata_rata>=60){
             System.out.println(":)");
         }
         else {
@@ -322,88 +327,160 @@ Hasil Run/Output :
 ![1](https://user-images.githubusercontent.com/114122090/197333529-b21be5f2-c599-4724-9c7e-c7033184c286.png)
 
 2. Gunakan JOptionPane untuk mendapat input dari user dan output hasilnya.
+
 Kode Program :
 ```java
 public static void main(String[] args) {
-    BufferedReader dataIn = new BufferedReader(new InputStreamReader( System.in) ); 
-    int angka=0; 
-    int angka2=0; 
-    int jumlah=0; 
+    String r="";
+    String s="";
+    String t="";
 
-    try{ 
-    System.out.print("Masukan angka pertama : ");
-    angka = Integer.parseInt(dataIn.readLine()); 
+    r=JOptionPane.showInputDialog("Masukkan nilai pertama Anda");
 
-    System.out.print("Masukan angka kedua : ");
-    angka2 = Integer.parseInt(dataIn.readLine());
+    int pertama = Integer.valueOf(r).intValue();
+    s=JOptionPane.showInputDialog("Masukkan nilai kedua Anda");
 
-    jumlah = angka + angka2;
+    int kedua = Integer.valueOf(s).intValue();
+    t=JOptionPane.showInputDialog("Masukkan nilai ketiga Anda");
+
+    int ketiga = Integer.valueOf(t).intValue();   
+    int rata_rata=(pertama+kedua+ketiga)/3;
+
+    String hasil= "";
+
+    hasil += "Nilai pertama: " +pertama +"\n";
+    hasil += "Nilai kedua: " +kedua +"\n";
+    hasil += "Nilai ketiga: " +ketiga +"\n";
+    hasil += "Rata-rata nilai Anda adalah " +rata_rata+"\n";
+
+      if (rata_rata<=60){
+         hasil +=":("+"\n";
+      }
+      else {
+         hasil +=":)"+"\n";
+      }
+    JOptionPane.showMessageDialog(null, hasil);
     }
-    catch( IOException e ){ 
-    System.out.println("Error!"); 
-    } 
-
-    System.out.println(angka+" + "+angka2+" = "+jumlah);
-} 
 ```
 
 Hasil Run/Output :
 
-![2](https://user-images.githubusercontent.com/114122090/197333561-e78d9420-2ed5-46ec-a53d-3a4e4e89a281.png)
+*masukan input ke 1*
+
+![3](https://user-images.githubusercontent.com/114122090/197369718-d8397e0f-d818-433d-8ada-7ab7c4331c9e.png)
+
+*masukan input ke 2*
+
+![3a](https://user-images.githubusercontent.com/114122090/197369721-619a34b9-deca-48b7-8a6b-81ce6e3ddcee.png)
+
+*masukan input ke 3*
+
+![3b](https://user-images.githubusercontent.com/114122090/197369722-67866ec8-adb5-4629-89be-eb7ff9bb6f26.png)
+
+*output*
+
+![3c](https://user-images.githubusercontent.com/114122090/197369725-78be9e98-8c4d-4bd8-8fae-53c472203ccc.png)
+
 
 ### `6.5.2 Membaca Bilangan`
 Ambil sebuah angka sebagai input dari user, dan outputnya berupa kata yang sesuai 
 dengan angka. Angka yang dimasukkan antara 1-10. Jika user memasukkan nilai yang 
 tidak sesuai berikan output “Invalid number”. 
 1. Gunakan statement if-else untuk menyelesaikan 
+
 Kode Program :
 ```java
-public static void main( String[] args ){ 
-    String name = ""; 
-    name = JOptionPane.showInputDialog("Please enter your name"); 
+public static void main(String[]args){
+    String angka="";
+    angka=JOptionPane.showInputDialog("Silahkan masukkan angka ");
+    int z = Integer.valueOf(angka).intValue();
 
-    String msg = "Hello " + name + "!"; 
-
-    JOptionPane.showMessageDialog(null, msg); 
-
+    String hasil ="";
+        if (z>=1&&z<=10){
+             hasil += "Valid number";
+        }
+        else{
+             hasil += "Invalid Number";
+        }
+    JOptionPane.showMessageDialog(null, hasil);
+    }
 }
 ```
 
 Hasil Run/Output :
 
-![3](https://user-images.githubusercontent.com/114122090/197333711-7c6d084e-f213-4e2f-a708-c405c3f3cd80.png)
+*jika angka yang diinput valid*
 
-![4](https://user-images.githubusercontent.com/114122090/197333713-c3911125-b10f-4628-93bd-1fd09101af3b.png)
+![2](https://user-images.githubusercontent.com/114122090/197370066-8d58775a-6b54-4504-bde6-27cb6ebced59.png)
+
+![2a](https://user-images.githubusercontent.com/114122090/197370068-2f42196e-a8c8-4671-b865-9c860de405af.png)
+
+
+*jika angka yang diinput tidak valid*
+
+![2b](https://user-images.githubusercontent.com/114122090/197370069-362effb3-efac-4044-9dce-531881a388b1.png)
+
+![2c](https://user-images.githubusercontent.com/114122090/197370072-3f0c6657-a022-4f29-825f-31c445a040d7.png)
 
 
 3. Gunakan statement switch untuk menyelesaikan 
+
 Kode Program :
 ```java
-public static void main( String[] args ){  
-    int angka=0;
-    int angka2=0; 
-    int jumlah=0;
+public static void main(String[]args){
+    String angka="";
+    angka=JOptionPane.showInputDialog("Silahkan masukkan angka ");
+    int z = Integer.valueOf(angka).intValue();
 
-    angka = Integer.parseInt(JOptionPane.showInputDialog("Masukan angka pertama")); 
-    angka2 = Integer.parseInt(JOptionPane.showInputDialog("Masukan angka kedua"));
-    jumlah = angka2+angka; 
-
-    String msg = angka+" + "+angka2+" = "+jumlah; 
-
-    JOptionPane.showMessageDialog(null, msg); 
-}
+    String hasil="";
+    switch(z){
+    case 1: hasil+= "Valid Number"; break;
+    case 2: hasil+= "Valid Number"; break;
+    case 3: hasil+= "Valid Number"; break;
+    case 4: hasil+= "Valid Number"; break;
+    case 5: hasil+= "Valid Number"; break;
+    case 6: hasil+= "Valid Number"; break;
+    case 7: hasil+= "Valid Number"; break;
+    case 8: hasil+= "Valid Number"; break;
+    case 9: hasil+= "Valid Number"; break;
+    case 10: hasil+= "Valid Number"; break;
+    default: hasil+= "Invalid Number"; break;
+    }
+    JOptionPane.showMessageDialog(null, hasil);
+  }
 ```
 Hasil Run/Output :
 
-![5](https://user-images.githubusercontent.com/114122090/197333784-0caa8073-80c4-4e5b-89da-0d2d63665f90.png)
+*jika angka yang diinput valid*
 
-![6](https://user-images.githubusercontent.com/114122090/197333791-ec6be134-f7ea-4a57-bccb-b16e477a0fa0.png)
+![2](https://user-images.githubusercontent.com/114122090/197370066-8d58775a-6b54-4504-bde6-27cb6ebced59.png)
 
-![7](https://user-images.githubusercontent.com/114122090/197333800-b3828fe6-fd9c-4596-bad1-5bed07ced876.png)
+![2a](https://user-images.githubusercontent.com/114122090/197370068-2f42196e-a8c8-4671-b865-9c860de405af.png)
+
+
+*jika angka yang diinput tidak valid*
+
+![2b](https://user-images.githubusercontent.com/114122090/197370069-362effb3-efac-4044-9dce-531881a388b1.png)
+
+![2c](https://user-images.githubusercontent.com/114122090/197370072-3f0c6657-a022-4f29-825f-31c445a040d7.png)
+
 
 ### `6.5.3 Cetak Seratus Kali`
 Buat sebuah program yang mencetak nama Anda selama seratus kali. Buat tiga versi 
 program ini menggunakan while loop, do while dan for-loop. 
+
+**Versi.1**
+
+**Versi.2**
+
+**Versi.3**
+
 ### `6.5.4 Perpangkatan`
 Hitung pangkat sebuah nilai berdasarkan angka dan nilai pangkatnya. Buat tiga versi 
 dari program ini menggunakan while loop, do-while dan for-loop. 
+
+**Versi.1**
+
+**Versi.2**
+
+**Versi.3**
