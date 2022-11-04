@@ -3,7 +3,7 @@
 - [Modul 4](README.md#modul-4) Dasar-Dasar Pemrograman
 - [Modul 5](README.md#modul-5) Mendapatkan Input dari Keyboard
 - [Modul 6](README.md#modul-6) Stuktur Kontrol
-- [Modul 7](README.md#modul-7)
+- [Modul 7](README.md#modul-7) Java Array
 
 ## Modul 3
 # 3.6 Latihan
@@ -78,7 +78,7 @@ Hasil Run/Output :
 
 ## Modul 4
 # 4.11 Latihan
-### `4.11.1 Mendeklarasikan dan mencetak variabel `
+### `4.11.1 Mendeklarasikan dan mencetak variabel`
 Diberikan tabel dibawah ini, deklarasikan variabel yang terdapat didalamnya dengan tipe 
 data yang sesuai dan berikan nilai inisialisasi. Tampilkan hasil outputnya yaitu nama 
 variabel dan nilainya. 
@@ -628,3 +628,50 @@ Hasil Run/Output :
 
 ![9b](https://user-images.githubusercontent.com/114122090/197370624-0a7d772a-6b60-4ab5-85a5-cefcc91c4f5a.png)
 
+## Modul 7
+# 7.7 Latihan 
+### `7.7.1 Hari dalam seminggu` 
+Buatlah sebuah String array yang akan menginisialisasi 7 hari dalam seminggu. Sebagai contoh, 
+```
+String days[] = {“Monday”, “Tuesday”….}; 
+````
+Gunakan while-loop, kemudian print semua nilai dari array (Gunakan juga untuk dowhile dan for-loop)Using a while-loop. 
+
+Kode Program :
+**Versi.1  (While)**
+**Versi.2  (Do-While)**
+**Versi.3  (For)**
+
+### `7.7.2 Nomor terbesar` 
+Gunakanlah BufferedReader dan JoptionPane, tanyakan kepada user untuk 10 nomor. 
+Kemudian gunakan array untuk menyimpan 10 nomor tersebut. Tampilkan kepada user, 
+input terbesar yang telah diberikan user. 
+
+Kode Program :
+
+
+### `7.7.3 Buku Alamat` 
+Berikut ini adalah array multidimensi yang menyatakan isi dari sebuah buku alamat: 
+```
+String entry = {{"Florence", "735-1234", "Manila"}, 
+ {"Joyce", "983-3333", "Quezon City"}, 
+ {"Becca", "456-3322", "Manila"}}; 
+```
+
+Kode Program :
+
+
+Cetak buku alamat tersebut dalam format berikut ini: 
+```
+Name : Florence 
+Tel. # : 735-1234 
+Address : Manila 
+Name : Joyce 
+Tel. # : 983-3333 
+Address : Quezon City 
+Name : Becca 
+Tel. # : 456-3322 
+Address : Manila
+```
+
+Kode Program :
