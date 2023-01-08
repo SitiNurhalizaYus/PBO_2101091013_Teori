@@ -4,6 +4,11 @@
 - [Modul 5](README.md#modul-5) Mendapatkan Input dari Keyboard
 - [Modul 6](README.md#modul-6) Stuktur Kontrol
 - [Modul 7](README.md#modul-7) Java Array
+- [Modul 8](README.md#modul-8) Argumen dari Command-line
+- [Modul 9](README.md#modul-9) Bekerja dengan Java Class Library
+- [Modul 10](README.md#modul-10) Membuat Class Sendiri
+- [Modul 11](README.md#modul-11) Pewarisan, Polimorfisme, dan Interface
+- [Modul 12](README.md#modul-12) Dasar Exception Handling
 
 ## Modul 3
 # 3.6 Latihan
@@ -675,3 +680,137 @@ Address : Manila
 ```
 
 Kode Program :
+
+## Modul 8
+
+## Modul 9
+# 9.6 Latihan 
+## 9.6.1 Mendefinisikan Istilah 
+Dengan kata-kata Anda sendiri, definisikan istilah-istilah berikut ini : 
+1. Class 
+2. Object 
+3. Instantiate 
+4. Instance Variable 
+5. Instance Method 
+6. Class Variables atau static member variables 
+7. Constructor 
+
+## 9.6.2 Java Scavanger Hunt 
+Pipoy adalah suatu anggota baru dalam bahasa pemrograman Java. Dia hanya 
+memperdengarkan bahwa telah ada APIs siap pakai dalam Java yang salah satunya dapat 
+digunakan dalam program mereka, dan ia ingin sekali untuk mengusahakan mereka keluar. 
+Masalahnya adalah, Pipoy tidak memiliki copy dari dokumentasi Java, dan dia juga tidak 
+memiliki acces internet, jadi tidak ada jalan untuknya untuk menunjukkan Java APIs. 
+Tugas Anda adalah untuk membantu Pipoy memperhatikan APIs (Application Programming 
+Interface). Anda harus menyebutkan class dimana seharusnya method berada, deklarasi 
+method dan penggunaan contoh yang dinyatakan method. 
+Sebagai contoh, jika Pipoy ingin untuk mengetahui method yang mengknversisebuah String 
+ke integer,jawaban Anda seharusnya menjadi: 
+ Class: Integer 
+ Method Declaration: public static int parseInt( String value ) 
+ Sample Usage: 
+ String strValue = "100"; 
+ int value = Integer.parseInt( strValue ); 
+yakinkan bahwa snippet dari kode yang Anda tulis dalam contoh Anda menggunakan 
+compiles dan memberi output jawaban yang benar, jadi tidak membingungkan Pipoy. 
+(Hint: Semua methods adalah dalam java.lang package). Dalam kasus dimana Anda 
+dapat menemukan lebih banyak methods yang dapat menyelesaikan tugas, berikan hanya 
+satu. 
+
+Sekarang mari memulai pencarian! 
+1. Perhatikan sebuah method yang diuji jika String pasti diakhiri suffix yang pasti. Sebagai 
+contoh, jika diberikan string "Hello", Method harus mengembalikan nilai true suffix yang 
+diberikan adalah "lo", dan false jika suffix yang diberikan adalah "alp". 
+
+2. Perhatikan untuk method yang mengenali character yang mewakili sebuah digit yang 
+spesifik dalam radix khusus. Sebagai contoh, jika input digit adalah 15, dan the radix 
+adalah 16, method akan mengembalikan Character F, sejak F adalah representasi 
+hexadecimal untuk angka 15 (berbasis 10). 
+
+3. Perhatikan untuk method yang mengakhiri running Java Virtual Machine yang sedang 
+berjalan 
+
+4. Perhatikan untuk method yang memperoleh lantai dari sebuah nilai double. Sebagai 
+contoh, jika Saya input a 3.13, method harus mengembalikan nilai 3. 
+5. Perhatikan untuk method yang mengenali jika character yang dipakai adalah sebuah 
+digit. Sebagai contoh, jika Saya input '3', dia akan mengembalikan nilai true
+
+## Modul 10
+# 10.10. Latihan 
+## 10.10.1 Entry Buku Alamat 
+Tugas Anda adalah membuat sebuah class yang memuat data-data pada buku alamat. 
+Tabel berikut mendefinisikan informasi yang dimiliki oleh buku alamat. 
+Attribut Deskripsi 
+Nama Nama Lengkap perseorangan 
+Alamat Alamat Lengkap 
+Nomor Telepon Nomor telepon personal 
+Alamat E-Mail Alamat E-Mail personal 
+Tabel 1: Atribut dan Deskripsi Atribut 
+
+Buat implementasi dari method sebagai berikut : 
+1. Menyediakan accessor dan mutator method terhadap seluruh atribut 
+2. Constructor 
+
+## 10.10.2 Buku Alamat 
+Buat sebuah class buku alamat yang dapat menampung 100 data. Gunakan class yang telah 
+dibuat pada nomor pertama. Anda harus mengimplementasikan method berikut pada buku 
+alamat : 
+1. Memasukkan data 
+2. Menghapus data 
+3. Menampilkan seluruh data 
+4. Update data
+
+## Modul 11
+# 11.6 Latihan 
+## 11.6.1 Extend StudentRecord 
+Dalam latihan ini, kita ingin untuk membuat catatan siswa yang lebih khusus yang berisi 
+informasi tambahan tentang pengetahuan komputer siswa. Tugasnya adalah meng-extend 
+class StudentRecord yang mengimplementasikan pelajaran sebelumnya. Cobalah untuk 
+meng-override beberapa method yang ada dalam superclass StudentRecord, jika Anda 
+benar-benar membutuhkannya. 
+
+## 11.6.2 Bentuk Abstract Class 
+Cobalah untuk membuat class abstract yang dinamai Shape dengan method abstract 
+getArea() dan getName(). Tulis dua subclasses-nya yaitu Circle dan Square. Anda dapat 
+menambahkan method tambahan ke dalam subclasses jika diinginkan.
+
+## Modul 12
+## 12.4.1 Menangkap Exception 1
+Diberikan kode berikut:
+```java
+public class TestExceptions{
+public static void main( String[] args ){
+for( int i=0; true; i++ ){
+System.out.println("args["+i+"]="+
+args[i]); 
+}
+}
+}
+```
+Compile dan jalankan program TestExceptions. Keluarannya akan tampak seperti ini:
+```java
+javac TestExceptions one two three
+args[0]=one
+args[1]=two
+args[2]=three
+Exception in thread "main"
+java.lang.ArrayIndexOutOfBoundsException: 3
+ at TestExceptions.main(1.java:4)
+ ```
+Ubah program TestExceptions untuk menangani exception, keluaran program setelah ditangkap
+exception-nya akan seperti ini:
+```java
+javac TestExceptions one two three
+args[0]=one
+args[1]=two
+args[2]=three
+Exception caught:
+java.lang.ArrayIndexOutOfBoundsException: 3
+Quiting...
+```
+
+## 12.4.2 Menangkap Exception 2
+Melakukan percobaan pada beberapa program yang telah Anda tulis adalah hal yang baik sebelum
+menghadapi exception. Karena pada program di atas Anda tidak menangkap exception, maka
+eksekusi dengan mudahnya berhenti mengeksekusi program Anda. Kembali kepada program
+diatas dan gunakan penanganan exception.
